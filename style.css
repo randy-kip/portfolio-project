@@ -205,3 +205,58 @@ header {
     color: #bdbdbf;
 }
 
+/* About Section */
+.about img {
+    height: auto;
+    width: 400px;
+    
+}
+
+.main {
+    display: flex;
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about {
+    background-color: #191919;
+    color:#bdbdbf;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.about-text h2 {
+    color: whitesmoke;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;    
+}
+
+.about-text h4 {
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text span {
+    color: #ffbb01;
+}
+
+.about-text p {
+    color: rgba(247, 245, 228, 0.8);
+    list-style: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+/* Services section */
