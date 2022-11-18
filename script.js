@@ -1,3 +1,8 @@
+const sr = ScrollReveal ({
+    distance: '80px',
+    duration: 2800,
+    reset: true
+})
 
-
-document.querySelector("body").appendChild(h2);
+sr.reveal('.text,.social', {delay:300, origin:'bottom'})
+sr.reveal('header', {delay:100, origin:'top'})

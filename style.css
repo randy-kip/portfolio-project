@@ -70,6 +70,7 @@ header {
     font-size: 16px;
     letter-spacing: 2px;
     cursor: pointer;
+    text-transform: uppercase;
  }
 
  .btn {
@@ -178,5 +179,29 @@ header {
 .btn2 span i:hover {
     background: #ffbb01;
     color:#161616;
+}
+
+/* Socials on intro page */
+.social {
+    position:absolute;
+    top: 50%;
+    padding: 0 7%;
+    transform: translateY(-50%);
+    /* color:#ffbb01; */
+}
+
+.social ul li {
+    margin: 20px 0;
+}
+
+.social ul li i {
+    font-size: 22px;
+    color:#ffbb01;
+    transition: all .30s;
+}
+
+.social ul li i:hover {
+    transform: translateY(-5px);
+    color: #bdbdbf;
 }
 
