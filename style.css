@@ -27,7 +27,9 @@ header {
     justify-content: space-between;
     background: transparent;
     padding: 25px 7%;
+    
 }
+
 
 .navbar {
     display: flex;
@@ -38,7 +40,7 @@ header {
 }
 
 .navbar a {
-    color: #161616;
+    color: whitesmoke;
     font-weight: 500;
     font-size: 1rem;
     padding: 10px 10px;
@@ -64,7 +66,7 @@ header {
  }
 
  .prime-anchor:hover {
-    color: #14b09b;
+    color: #161616;
     font-size: 16px;
     letter-spacing: 2px;
     cursor: pointer;
@@ -89,3 +91,92 @@ header {
     opacity: 0.7;
     transform: translateY(-5px);
  }
+
+ /*intro section and main image*/
+ section {
+    padding: 0 16%;
+ }
+
+ .container {
+    height: 100vh;
+    width: 100%;
+    background: url(./images/1080.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    color: whitesmoke;
+ }
+
+ .text {
+    padding-top: 70px;
+ }
+ .text .slide {
+    margin-bottom: 20px;
+ }
+ .text .one {
+    height: 40px;
+    padding: 0px 15px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 22px;
+    background: #ffbb01;
+    color: #161616;
+ }
+
+ .text .two {
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 500;
+ }
+
+ .text h1 {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0 0  8px;
+ }
+
+.dev {
+    color: #ffbb01;
+ }
+
+.button {
+    /* display: inline-flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2 {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    color:#ffbb01;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.btn2 span i {
+    height: 70px;
+    width: 70px;
+    font-size: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 10px 8px rgba(132, 145, 21, 0.726);
+    margin-right: 20px;
+    transition: ease .30s;
+}  
+
+.btn2 span i:hover {
+    background: #ffbb01;
+    color:#161616;
+}
+
