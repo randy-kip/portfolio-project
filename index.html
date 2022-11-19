@@ -44,12 +44,12 @@
     </header>
     
     <section class = "container">
-        <div class = "text">
+        <div id ="home" class = "text">
             <div class = "slide">
                 <span class = "one">Hi there</span>
                 <span class = "two">I'm</span>
             </div>
-            <h1 id = #home>Randy</h1>
+            <h1>Randy</h1>
             <small>Networking <span class = "dev">Associate</span> <i class='bx bxs-network-chart'></i> Software <span class = "dev">Engineer</span> <i class='bx bx-laptop'></i> Tech Enthusiast</small>
             <div class = "button">
                 <a href="#" class = "btn2"><span><i class='bx bx-play-circle' ></i></span>My Masterpieces</a>
@@ -204,6 +204,24 @@
             
         </div>
     </footer>
+
+    <!-- Scroll to Top button -->
+    <div class="scroll-top" onclick="scrollToTop();"></div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            var scroll = document.querySelector('.scroll-top');
+            scroll.classList.toggle("active", window.scrollY > 500)
+        })
+
+        function scrollToTop(){
+        window.scrollTo({
+            top: 0,
+            behavior:"smooth"
+        })
+    }
+    </script>
+
 
     <script type = "text/javascript" src="script.js"></script>
     
