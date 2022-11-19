@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a42a664857.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/R-logo.jpg" type="image/icon type">
     
 </head>
 <body>
@@ -30,10 +31,10 @@
                     <a class = "prime-anchor" href="#serv">Services</a>
                 </li>
                 <li>
-                    <a class = "prime-anchor" href="/projects">Projects</a>
+                    <a class = "prime-anchor" href="#proj">Projects</a>
                 </li>
                 <li>
-                    <a class = "prime-anchor" href="contacts">let's talk</a>
+                    <a class = "prime-anchor" href="#contact">let's talk</a>
                 </li>
                 
             </ul>
@@ -130,15 +131,79 @@
     </div>
 
 
-    <!-- Portfolio Section -->
+    <!-- Projects/image slider Section -->
+    <section class="projects">
+        <div class="project-title">
+            <h2 id="proj">Projects</h2>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                
+                <!-- radio buttons -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!-- slide images -->
+                <div class="slide first">
+                    <img src="./images/cisco.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="./images/dev.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="./images/diani.jpg"/>
+                </div>
+                <div class="slide">
+                    <img src="./images/meme.JPG"/>
+                </div>
+                <!-- Auto navigation -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+
+            <!-- manual navigation -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+    </section>    
 
 
 
 
-    <!-- Let's Talk Section -->
-    <div class="talk">
-        
-    </div>
+    <!-- Let's Talk Section//Footer -->
+    <footer>
+        <div class="talk">
+            <h2 id="contact">Let's Talk</h2>
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Enter your e-mail">
+                <input type="submit" name="submit" value="Submit">
+            </form>
+            
+        </div>
+    </footer>
 
     <script type = "text/javascript" src="script.js"></script>
     
