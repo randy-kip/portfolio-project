@@ -1,8 +1,8 @@
-const sr = ScrollReveal ({
-    distance: '80px',
-    duration: 2800,
-    reset: true
-})
+const sr = ScrollReveal({
+  distance: "80px",
+  duration: 2800,
+  reset: true,
+});
 
-sr.reveal('.text,.social', {delay:300, origin:'bottom'})
-sr.reveal('header', {delay:100, origin:'top'})
+sr.reveal(".text,.social", { delay: 300, origin: "bottom" });
+sr.reveal("header", { delay: 100, origin: "top" });
