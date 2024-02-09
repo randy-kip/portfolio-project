@@ -37,5 +37,9 @@ Explore my personal portfolio, a testament to my expertise in HTML and CSS. Dive
 Feel free to explore each project to delve into its functionality, implementation details, and the problem-solving approach undertaken. Your feedback and suggestions are greatly appreciated! I'm always open to collaboration and new opportunities!
 
 
+## License
+[MIT]()
 
 Thank you for visiting!
+
+
