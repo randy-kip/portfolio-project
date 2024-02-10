@@ -38,7 +38,7 @@ Feel free to explore each project to delve into its functionality, implementatio
 
 
 ## License
-[MIT]()
+[MIT](https://github.com/randy-kip/portfolio-project/blob/main/LICENSE.md)
 
 Thank you for visiting!
 
