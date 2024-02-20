@@ -223,10 +223,7 @@
           </div>
 
           <div class="slide">
-            <a
-              href="https://trek-trove.flutterflow.app/"
-              target="_blank"
-            >
+            <a href="https://trek-trove.flutterflow.app/" target="_blank">
               <img src="./assets/TrekTrove.png" />
             </a>
           </div>
@@ -274,7 +271,7 @@
     <footer>
       <div class="talk">
         <h2 id="contact">Let's Talk</h2>
-        <form>
+        <form onsubmit="sendMail(); reset(); return false;">
           <input
             type="email"
             name="email"
@@ -282,6 +279,7 @@
             placeholder="Enter your e-mail"
           />
           <input type="submit" name="submit" value="Submit" />
+          <!-- <a href="mailto:randy.cherutich@moringaschool.com">Say Hello!</a> -->
         </form>
       </div>
     </footer>
@@ -304,5 +302,19 @@
     </script>
 
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendMail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "aspectrandy@gmail.com",
+          Password: "CrUD;2783",
+          To: "aspectrandy@gmail.com",
+          From: document.getElementById("mail").value,
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
   </body>
 </html>
